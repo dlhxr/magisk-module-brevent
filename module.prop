@@ -1,8 +1,8 @@
-id=prevent
-name=Prevent Magisk Module
+id=brevent
+name=Brevent Magisk Module
 version=v0.4
 versionCode=1
 author=dlhxr
-description=Prevent Magisk Module, Must Install The APP As Well
+description=Brevent Magisk Module, Must Install The APP As Well
 support=http://coolapk.com/apk/me.piebridge.brevent
 donate=
