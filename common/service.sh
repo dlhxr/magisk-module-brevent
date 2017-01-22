@@ -12,7 +12,9 @@ for x in 1 2 3; do
   file=/data/app/me.piebridge.brevent-$x/lib/*/libbootstrap.so
   echo "$file" >> $LOGFILE
   if [ -f $file ]; then
-    $file
+	order="."${file}
+	echo "$order" >> $LOGFILE
+    $order >> $LOGFILE
     echo "done" >> $LOGFILE
     break
   fi
