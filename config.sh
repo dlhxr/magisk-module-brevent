@@ -51,7 +51,6 @@ LATESTARTSERVICE=true
 print_modname() {
   ui_print "********************************"
   ui_print "     Magisk Module Brevent      "
-  ui_print "Need Install Brevent APP As Well"
   ui_print "********************************"
 }
 
