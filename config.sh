@@ -27,7 +27,7 @@
 
 # This will be the folder name under /magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=template
+MODID=prevent
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
@@ -37,7 +37,7 @@ AUTOMOUNT=true
 PROPFILE=false
 
 # Set to true if you need post-fs-data script
-POSTFSDATA=false
+POSTFSDATA=true
 
 # Set to true if you need late_start service script
 LATESTARTSERVICE=false
@@ -49,9 +49,11 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
-  ui_print "*******************************"
+  ui_print "***********************************"
+  ui_print "       Magisk Module Prevent       "
+  ui_print "   Please Put Patched service.jar  "
+  ui_print "at /data/media/prevent/service.jar "
+  ui_print "***********************************"
 }
 
 ##########################################################################################

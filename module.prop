@@ -1,8 +1,8 @@
-id=template
-name=Template Module
+id=prevent
+name=Prevent Magisk Module
 version=v1
 versionCode=1
-author=topjohnwu
-description=A short description
-support=http://forum.xda-developers.com/showthread.php?t=3432382
-donate=http://topjohnwu.github.io/donate
+author=dlhxr
+description=Firstly Patch Your Own services.jar first
+support=
+donate=
