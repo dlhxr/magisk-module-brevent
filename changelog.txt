@@ -1,4 +1,0 @@
-[20170122]
--change to script mode
-[20170121]
--initial bring up
