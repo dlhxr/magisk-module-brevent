@@ -1,21 +1,11 @@
-#!/system/bin/sh
-# Please don't hardcode /magisk/modname/... ; instead, please use $MODDIR/...
-# This will make your scripts compatible even if Magisk change its mount point in the future
+#!/system/bin/sh -x
 MODDIR=${0%/*}
-
-# This script will be executed in late_start service mode
-# More info in the main Magisk thread
-
-LOGFILE=/cache/magisk.log
-
-for x in 1 2 3; do
-  file=/data/app/me.piebridge.brevent-$x/lib/*/libbootstrap.so
-  echo "$file" >> $LOGFILE
-  if [ -f $file ]; then
-	order="."${file}
-	echo "$order" >> $LOGFILE
-    $order >> $LOGFILE
-    echo "done" >> $LOGFILE
-    break
-  fi
-done
+if getprop ro.product.cpu.abilist | grep -q x86
+then
+abi=x86
+else
+abi=arm
+fi
+rm -f /cache/Brevent.log
+su -c `pm path me.piebridge.brevent | cut -b 9-40`/lib/$abi/libbootstrap.so &> /cache/Brevent.log
+#su shell -p -cn u:r:shell:s0 -c "`pm path me.piebridge.brevent | cut -b 9-40`/lib/$abi/libbootstrap.so"

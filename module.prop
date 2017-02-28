@@ -1,8 +1,6 @@
-id=brevent
-name=Brevent Magisk Module
-version=v2
-versionCode=2
-author=dlhxr
-description=Brevent Magisk Module, Must Install The APP As Well
-support=http://coolapk.com/apk/me.piebridge.brevent
-donate=
+id=brevent-script
+name=Brevent Startup
+version=1.0
+versionCode=1
+author=simonsmh
+description=Brevent Startup, Must Install The app As Well.

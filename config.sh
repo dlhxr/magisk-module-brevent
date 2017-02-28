@@ -27,11 +27,11 @@
 
 # This will be the folder name under /magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=brevent
+MODID=brevent-script
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
-AUTOMOUNT=true
+AUTOMOUNT=false
 
 # Set to true if you need to load system.prop
 PROPFILE=false
@@ -50,8 +50,7 @@ LATESTARTSERVICE=true
 
 print_modname() {
   ui_print "********************************"
-  ui_print "     Magisk Module Brevent      "
-  ui_print "Need Install Brevent APP As Well"
+  ui_print "        Magisk Brevent Script         "
   ui_print "********************************"
 }
 
